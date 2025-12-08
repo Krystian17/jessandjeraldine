@@ -1,31 +1,33 @@
-import HomePage from "@/modules/home/pages/home";
+import { Open_Sans, Pinyon_Script,  } from "next/font/google";
+
 import { Metadata } from "next";
-import { Nunito_Sans } from "next/font/google";
+import RSVPMain from "@/modules/johnandnowee/main";
 
-const nunitosans = Nunito_Sans({
-  display: 'swap',
+const playfair = Pinyon_Script({
   subsets: ["latin"], //Leave as is!
-  variable: "--font-nunitosans", // 2. Name of the font to call from css
-  weight: ["400", "700"], // (OPTIONAL) Sometimes you have to add this when error occurs
+  variable: "--font-header", // 2. Name of the font to call from css
   preload: true,
-  adjustFontFallback: false,
+  weight: "400"
 });
-
+const opensans = Open_Sans({
+  subsets: ["latin"], //Leave as is!
+  variable: "--font-body", // 2. Name of the font to call from css
+  preload: true,
+});
 
 const BaseSettings = {
   baseUrl: "https://www.startswithletter.rsvp/",
-  testURL: 'http://localhost:3000',
-  client: "home",
+  client: "johnandnowee",
 };
 
 const MetaTag = {
-  title: "Starts With Letter",
+  title: "John and Nowee – Wedding Website",
   siteName: "StartsWithLetter",
-  description: "September 04, 2023",
-  ogDescription: "September 04, 2023",
-  icon: `/favicon.ico`,
-  url: `${BaseSettings.baseUrl}`,
-  image: `/og-image.jpg`,
+  description: "December 17, 2024",
+  ogDescription: "December 17, 2024",
+  icon: `/img/${BaseSettings.client}/favicon.ico`,
+  url: `${BaseSettings.client}`,
+  image: `/img/${BaseSettings.client}/og-image.jpg`,
   imageWidth: "1200",
   imageHeight: "600",
 };
@@ -50,7 +52,6 @@ export const metadata: Metadata = {
 };
 
 
-
-export default function Home() {
-  return <HomePage font={nunitosans} />;
+export default function MainPage() {
+  return <RSVPMain BaseSettings={BaseSettings} header={playfair} body={opensans} />;
 }
