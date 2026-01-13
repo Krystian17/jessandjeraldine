@@ -27,7 +27,7 @@ const MetaTag = {
   ogDescription: "Febraury 14, 2026",
   icon: `/img/${BaseSettings.client}/favicon.ico`,
   url: `${BaseSettings.client}`,
-  image: `/img/${BaseSettings.client}/og-image.jpg`,
+  image: `https://www.jessandjeraldine.com/img/jessandjeraldine/og-image.jpg`,
   imageWidth: "1200",
   imageHeight: "600",
 };
