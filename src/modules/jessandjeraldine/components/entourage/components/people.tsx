@@ -1,6 +1,6 @@
 import toBase64 from '@/components/base64';
 import shimmer from '@/components/shimmer';
-import { PeopleType } from '@/modules/johnandnowee/lib/entourage';
+import { PeopleType } from '@/modules/jessandjeraldine/lib/entourage';
 import Image from 'next/image';
 
 type propType = {
