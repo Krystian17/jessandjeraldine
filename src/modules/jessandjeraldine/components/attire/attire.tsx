@@ -28,7 +28,7 @@ const Attire = ({ client }: propType) => {
 
       <div className={'weddingLayout'}>
         <div className='attire'>
-          <h2>An Evening of Enchantment</h2>
+          <h2>1An Evening of Enchantment</h2>
 
             <p> To complete the magic of this enchanted evening, we invite our guests to dress in a style that reflects grace, beauty, and celebration. <br/><br/> <b>Wardrobe of Wonders: Strictly Formal Attire</b></p>
             <Image
