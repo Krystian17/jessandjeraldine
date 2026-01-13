@@ -1,9 +1,9 @@
-import { Open_Sans, Pinyon_Script,  } from "next/font/google";
+import { Open_Sans, Pinyon_Script, Playfair_Display } from "next/font/google";
 
 import { Metadata } from "next";
-import RSVPMain from "@/modules/johnandnowee/main";
+import RSVPMain from "@/modules/jessandjeraldine/main";
 
-const playfair = Pinyon_Script({
+const playfair = Playfair_Display({
   subsets: ["latin"], //Leave as is!
   variable: "--font-header", // 2. Name of the font to call from css
   preload: true,
@@ -17,14 +17,14 @@ const opensans = Open_Sans({
 
 const BaseSettings = {
   baseUrl: "https://www.startswithletter.rsvp/",
-  client: "johnandnowee",
+  client: "jessandjeraldine",
 };
 
 const MetaTag = {
-  title: "John and Nowee – Wedding Website",
+  title: "Jess and Jeraldine – Wedding Website",
   siteName: "StartsWithLetter",
-  description: "December 17, 2024",
-  ogDescription: "December 17, 2024",
+  description: "Febraury 14, 2026",
+  ogDescription: "Febraury 14, 2026",
   icon: `/img/${BaseSettings.client}/favicon.ico`,
   url: `${BaseSettings.client}`,
   image: `/img/${BaseSettings.client}/og-image.jpg`,
@@ -52,6 +52,6 @@ export const metadata: Metadata = {
 };
 
 
-export default function MainPage() {
+export default function Sample() {
   return <RSVPMain BaseSettings={BaseSettings} header={playfair} body={opensans} />;
 }

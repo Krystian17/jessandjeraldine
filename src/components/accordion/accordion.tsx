@@ -19,7 +19,7 @@ const Accordion = ({ title, description }: propType) => {
     <div className={styles.card} onClick={OpenHandler}>
       <div className={`${styles.title} ${isOpen ? styles.active : ''}`}>
         {title}
-        <DropdownIcon fill={'black'} height={'1.25rem'} width={'1.25rem'} />
+        <DropdownIcon fill={'white'} height={'1.25rem'} width={'1.25rem'} />
       </div>
       <div ref={contentHeight} style={isOpen ? { height: contentHeight.current?.scrollHeight } : { height: '0px' }} className={`${styles.details}`}>
         {description}

@@ -1,0 +1,36 @@
+section#faqs {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  padding: 10rem 0rem;
+  background-color: #734C3E;
+  background-image: url('/img/' + jessandjeraldine + '/bgpattern.png');
+  background-attachment: fixed;
+
+  .faqsLayout {
+    display: flex;
+    max-width: 42.75rem;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    gap: 3.4375rem;
+    padding: 1rem;
+
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .accordionContainer {
+      display: flex;
+      align-self: stretch;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.625rem;
+    }
+  }
+}
