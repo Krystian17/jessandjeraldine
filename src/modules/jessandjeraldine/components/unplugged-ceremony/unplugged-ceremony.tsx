@@ -32,7 +32,7 @@ const Accommodation = ({ client }: propType) => {
         height={462}
       />
       <div className='accommodationLayout'>
-        <h2>!Unplugged Ceremony</h2>
+        <h2>Unplugged Ceremony</h2>
 
         <div className='info'>
           <div className='desc'>
