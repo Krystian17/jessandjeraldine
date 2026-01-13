@@ -1,0 +1,155 @@
+@import '../../../styles/variables.scss';
+section#attire {
+  background-color: #734C3E;
+  background-image: url('/img/' + jessandjeraldine + '/bgpattern.png');
+  background-attachment: fixed;
+
+}
+
+.weddingLayout {
+  display: flex;
+  max-width: 44.8125rem;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  gap: 0.625rem;
+  padding: 1rem;
+  margin: auto;
+  width: 100%;
+
+  h2 {
+    font-family: $font-header;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .attire {
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5625rem;
+
+    .palette {
+      display: flex;
+      max-width: 8.1875rem;
+      justify-content: center!important;
+      align-items: center;
+      width: 100%;
+      margin: auto;
+      align-self: stretch;
+      gap: 0.5rem;
+    }
+  }
+
+  .gift-guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+    align-self: stretch;
+    width: 100%;
+
+    .desc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5625rem;
+      align-self: stretch;
+    }
+  }
+
+  .location-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+    align-self: stretch;
+    width: 100%;
+
+    .desc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5625rem;
+      align-self: stretch;
+
+      .qrs {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2.875rem;
+        align-self: stretch;
+
+        .qr {
+          display: flex;
+          width: 11.25rem;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5625rem;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .qrs {
+          flex-direction: column;
+          align-items: center;;
+        }
+        .opacityone {
+          opacity: 30% !important;
+        }
+        .opacitytwo {
+          opacity: 30% !important;
+        }
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    width: 100%;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.0625rem;
+    .desc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5625rem;
+      align-self: stretch;
+
+      .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5625rem;
+        align-self: stretch;
+      }
+
+      .qr {
+        display: flex;
+      margin: auto;
+        max-width: 27.3125rem;
+        align-self: stretch;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.125rem;
+      }
+    }
+  }
+}
+
+      @media (max-width: 767px) {
+        .opacityone {
+          opacity: 30% !important;
+        }
+        .opacitytwo {
+          opacity: 30% !important;
+        }
+      }

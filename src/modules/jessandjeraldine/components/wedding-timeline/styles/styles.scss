@@ -1,0 +1,28 @@
+@import '../../../styles/variables.scss';
+section#weddingtimeline {
+    background-color: #734C3E;
+  background-image: url('/img/' + jessandjeraldine + '/bgpattern.png');
+  background-attachment: fixed;
+}
+#weddingtimeline {
+  padding:0rem 1rem;
+  padding-bottom: 7rem;
+  h2 {
+    // font-family: $font-banner;
+    // font-size: 3rem;
+    text-align: center;
+  }
+
+  p.hashtag {
+    margin: 1rem 0rem;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: #c06218;
+  }
+
+  @media (max-width: 767px) {
+    p.hashtag {
+      font-size: 1.5rem;
+    }
+  }
+}

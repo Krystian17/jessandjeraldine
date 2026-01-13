@@ -1,31 +1,33 @@
-import HomePage from "@/modules/home/pages/home";
+import { Open_Sans, Pinyon_Script, Playfair_Display } from "next/font/google";
+
 import { Metadata } from "next";
-import { Nunito_Sans } from "next/font/google";
+import RSVPMain from "@/modules/jessandjeraldine/main";
 
-const nunitosans = Nunito_Sans({
-  display: 'swap',
+const playfair = Playfair_Display({
   subsets: ["latin"], //Leave as is!
-  variable: "--font-nunitosans", // 2. Name of the font to call from css
-  weight: ["400", "700"], // (OPTIONAL) Sometimes you have to add this when error occurs
+  variable: "--font-header", // 2. Name of the font to call from css
   preload: true,
-  adjustFontFallback: false,
+  weight: "400"
 });
-
+const opensans = Open_Sans({
+  subsets: ["latin"], //Leave as is!
+  variable: "--font-body", // 2. Name of the font to call from css
+  preload: true,
+});
 
 const BaseSettings = {
   baseUrl: "https://www.startswithletter.rsvp/",
-  testURL: 'http://localhost:3000',
-  client: "home",
+  client: "jessandjeraldine",
 };
 
 const MetaTag = {
-  title: "Starts With Letter",
+  title: "Jess and Jeraldine – Wedding Website",
   siteName: "StartsWithLetter",
-  description: "September 04, 2023",
-  ogDescription: "September 04, 2023",
-  icon: `/favicon.ico`,
-  url: `${BaseSettings.baseUrl}`,
-  image: `/og-image.jpg`,
+  description: "Febraury 14, 2026",
+  ogDescription: "Febraury 14, 2026",
+  icon: `/img/${BaseSettings.client}/favicon.ico`,
+  url: `${BaseSettings.client}`,
+  image: `/img/${BaseSettings.client}/og-image.jpg`,
   imageWidth: "1200",
   imageHeight: "600",
 };
@@ -50,7 +52,6 @@ export const metadata: Metadata = {
 };
 
 
-
-export default function Home() {
-  return <HomePage font={nunitosans} />;
+export default function Sample() {
+  return <RSVPMain BaseSettings={BaseSettings} header={playfair} body={opensans} />;
 }
