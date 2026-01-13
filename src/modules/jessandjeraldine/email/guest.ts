@@ -266,7 +266,7 @@ export const emailGuestTemplate = (
                               <tr>
                                 <td style="width: 600px">
                                   <img
-                                  src="${hostname}/img/${clientname}/emailheader.png"
+                                  src="${hostname}/img/${clientname}/emailheader.jpg"
                                     style="
                                       border: 0;
                                       display: block;
