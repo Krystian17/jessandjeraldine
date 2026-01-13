@@ -235,7 +235,7 @@ const Time = ({ client }: propType) => {
               fontWeight: 700,
               color: '#ffffff'
             }}>
-            8:30 PM
+            7:30 PM
           </p>
           <p
             style={{
