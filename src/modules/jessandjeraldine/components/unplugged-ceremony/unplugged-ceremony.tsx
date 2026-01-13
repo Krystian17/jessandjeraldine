@@ -17,7 +17,7 @@ const Accommodation = ({ client }: propType) => {
         className='opacity'
         style={{ position: 'absolute', top: 10, left: '-1rem', zIndex: '1' }}
         placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(500, 500))}`}
-        src={`/img/jessandjeraldine/elem/left.png`}
+        src={`/img/${client}/elem/left.png`}
         alt={''}
         width={231}
         height={444}
@@ -26,7 +26,7 @@ const Accommodation = ({ client }: propType) => {
         className='opacity'
         style={{ position: 'absolute', top: '30%', right: '-1rem', zIndex: '1' }}
         placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(200, 644))}`}
-        src={`/img/jessandjeraldine/elem/right.png`}
+        src={`/img/${client}/elem/right.png`}
         alt={''}
         width={209}
         height={462}
