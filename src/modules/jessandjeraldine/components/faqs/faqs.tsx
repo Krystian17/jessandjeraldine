@@ -66,11 +66,11 @@ const Faqs = ({ client }: propType) => {
           />
           <Accordion
             title={
-              <p style={{ fontWeight: 700 }}>What happens if I don't RSVP?</p>
+              <p style={{ fontWeight: 700 }}>{`What happens if I don't RSVP?`}</p>
             }
             description={
               <p>
-              We kindly ask guests to RSVP on or before January 14, 2026. We’d love to celebrate with you! If we do not receive your RSVP, we will assume you are unable to attend.
+              {`We kindly ask guests to RSVP on or before January 14, 2026. We’d love to celebrate with you! If we do not receive your RSVP, we will assume you are unable to attend.`}
               </p>
             }
           />
